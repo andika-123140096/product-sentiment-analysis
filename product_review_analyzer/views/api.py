@@ -1,6 +1,4 @@
 from pyramid.view import view_config
-from pyramid.response import Response
-import json
 from datetime import datetime
 from transformers import pipeline
 from google import genai
