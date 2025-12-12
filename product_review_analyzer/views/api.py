@@ -18,7 +18,7 @@ def analyze_sentiment(text):
 def extract_key_points(text):
     try:
         prompt = f"Extract key points from this product review: {text}"
-        response = client.models.generate_content(model="gemini-1.5-flash", contents=prompt)
+        response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt)
         return response.text
     except Exception as e:
         return f"Error extracting key points: {str(e)}"
